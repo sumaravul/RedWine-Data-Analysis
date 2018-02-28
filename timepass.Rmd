@@ -6,14 +6,7 @@ output: RedWineQuality_Analysi
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## GitHub Documents
-
-This is analysis
-
-## Including Code
-
-You can include R code in the document as follows:
+## load all the libraries required for analysis
 
 ``` library(ggplot2)
 library(GGally)
@@ -24,6 +17,11 @@ library(memisc)
 library(psych)
 library(RColorBrewer)
 library(markdown)
+```
+
+## Read the file that stores the redwine data
+``` 
+Red_wine<-read.csv('wineQualityReds.csv')
 ```
 
 ## Including Plots
