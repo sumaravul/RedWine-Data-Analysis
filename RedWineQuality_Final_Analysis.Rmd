@@ -13,8 +13,11 @@ library(markdown)
 `````
 
 #Reading the red wine data 
+
 Red_wine<-read.csv('wineQualityReds.csv')
+
 #summerize the redwine data
+
 summary(Red_wine)
 
 #The data has 1599 observations with 12 variables. The variables include: 
