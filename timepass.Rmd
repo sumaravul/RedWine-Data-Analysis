@@ -1,0 +1,37 @@
+---
+title: "Redwine Quality Data Analysis"
+output: RedWineQuality_Analysi
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## GitHub Documents
+
+This is analysis
+
+## Including Code
+
+You can include R code in the document as follows:
+
+``` library(ggplot2)
+library(GGally)
+library(dbplyr)
+library(gridExtra)
+library(scales)
+library(memisc)
+library(psych)
+library(RColorBrewer)
+library(markdown)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
