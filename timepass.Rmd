@@ -3,9 +3,9 @@ title: "Redwine Quality Data Analysis"
 output: RedWineQuality_Analysi
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+##```{r setup, include=FALSE}
+##knitr::opts_chunk$set(echo = TRUE)
+##```
 ## load all the libraries required for analysis
 
 ``` library(ggplot2)
@@ -33,6 +33,53 @@ Red_wine
 ```
 
 ## Univarient analysis
+```quality<-ggplot(aes(quality), data = Red_wine) +
+  geom_histogram(fill = I('blue'), binwidth = 1, alpha = 0.75) +
+  xlab('Quality') +
+  ylab('Count')
+  
+
+Fixed_Acidity<-ggplot(aes(fixed.acidity), data = Red_wine) +
+  geom_histogram(fill = I('blue'), binwidth = 1, alpha = 0.5) +
+  xlab('Fixed Acidity') +
+  ylab('Count')
+
+Volatile_Acidity<-ggplot(aes(volatile.acidity), data = Red_wine) +
+  geom_histogram(fill = I('blue'), binwidth = 0.1) +
+  xlab('Volatile Acidity') +
+  ylab('Count')
+
+
+Citric_Acidity<-ggplot(aes(citric.acid), data = Red_wine) +
+  geom_histogram(fill = I('blue'), binwidth = 0.01) +
+  xlab('Citric Acid') +
+  ylab('Count')
+
+Residual_Sugar<-ggplot(aes(residual.sugar), data = Red_wine) +
+  geom_histogram(fill = I('blue'), binwidth = 0.9) +
+  xlab('Residual Sugar') +
+  ylab('Count')
+
+Chlorides<-ggplot(aes(chlorides), data = Red_wine) +
+  geom_histogram(fill = I('blue'), binwidth = 0.01) +
+  xlab('chlorides') +
+  ylab('Count')
+
+Density<-ggplot(aes(density), data = Red_wine) +
+  geom_histogram(fill = I('blue'), binwidth = 0.5) +
+  xlab('Density') +
+  ylab('Count')
+
+pH<-ggplot(aes(pH), data = Red_wine) +
+  geom_histogram(fill = I('blue'), binwidth = 1.0) +
+  xlab('pH') +
+  ylab('Count')
+grid.arrange(quality,Fixed_Acidity,Volatile_Acidity,Citric_Acidity,Residual_Sugar,Chlorides,Density,pH)
+```
+
+
+
+
 
 You can also embed plots, for example:
 
