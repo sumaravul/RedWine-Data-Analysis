@@ -12,7 +12,7 @@ library(RColorBrewer)
 library(markdown)
 `````
 
-#Reading the red wine data 
+#Reading the red wine data and storing it into a variable
 
 Red_wine<-read.csv('wineQualityReds.csv')
 
@@ -20,10 +20,10 @@ Red_wine<-read.csv('wineQualityReds.csv')
 
 summary(Red_wine)
 
-#The data has 1599 observations with 12 variables. The variables include: 
-Fixed Acidity 
-volatile acidity 
-citric acid
+##The data has 1599 observations with 12 variables. The variables include: 
+#Fixed Acidity 
+#volatile acidity 
+#citric acid
 Residual sugar 
 chloride 
 free sdo2 
