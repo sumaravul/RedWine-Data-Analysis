@@ -24,21 +24,20 @@ library(markdown)
 Red_wine<-read.csv('wineQualityReds.csv')
 ```
 #Red wine data has 1599 observations with 12 variables. The variable include:
-#Fixed Acidity
-#volatile acidity
-#citric acid
-#Residual sugar
-#chloride
-#free sdo2
-#Total sdo2
-#density
-#ph
-#sulphates
-#Alcohol
-#quality
-# My apporch is to conduct univarient and bivarient analysis.
-#univarient Analysis will show how each propertiy is distributed and to see if there are any outliers
-# Bivarient analysis will be done to see the correlation and to see if any property affects the quality of the wine.
+##Fixed Acidity
+##volatile acidity
+##citric acid
+##Residual sugar
+##chloride
+##free sdo2
+##Total sdo2
+##density
+##ph
+##sulphates
+##Alcohol
+##quality
+##My apporch is to conduct univarient and bivarient analysis.
+##univarient Analysis will show how each propertiy is distributed and to see if there are any outliers Bivarient analysis will be done to see the correlation and to see if any property affects the quality of the wine.
 
 
 
