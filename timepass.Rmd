@@ -23,6 +23,13 @@ library(markdown)
 ``` 
 Red_wine<-read.csv('wineQualityReds.csv')
 ```
+##Red wine data has 1599 observations with 13 variables
+##There is a column X which is not useful in the analysis hence deleting the column
+
+```
+Red_wine$X<-NULL
+Red_wine
+```
 
 ## Including Plots
 
