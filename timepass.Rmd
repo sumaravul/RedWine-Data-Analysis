@@ -32,7 +32,7 @@ Red_wine$X<-NULL
 Red_wine
 ```
 
-#Univerent analysis
+## Univarient analysis
 
 You can also embed plots, for example:
 
