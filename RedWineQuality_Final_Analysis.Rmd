@@ -21,9 +21,9 @@ Red_wine<-read.csv('wineQualityReds.csv')
 summary(Red_wine)
 
 ##The data has 1599 observations with 12 variables. The variables include: 
-#Fixed Acidity 
-#volatile acidity 
-#citric acid
+##Fixed Acidity 
+##volatile acidity 
+##citric acid
 Residual sugar 
 chloride 
 free sdo2 
