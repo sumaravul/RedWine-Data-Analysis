@@ -25,7 +25,7 @@ library(markdown)
 Red_wine<-read.csv('wineQualityReds.csv')
 head(Red_wine)
 ```
-
+## Observation
 Red wine data has 1599 observations with 13 variables.The variable include:
 Fixed Acidity
 volatile acidity
