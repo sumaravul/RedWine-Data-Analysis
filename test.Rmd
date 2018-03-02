@@ -47,8 +47,8 @@ Red_wine
 ```
 
 ## Analysis strategy
-Conduct univarient and bivarient analysis.
-univarient Analysis will show how each propertiy is distributed and to see if there are any outliers Bivarient analysis will be done to see the correlation and to see if any property affects the quality of the wine.
+Conduct univarient,bivarient analysis and bivarient analysis.
+univarient Analysis will show how each property is distributed and to see if there are any outliers Bivarient analysis will be done to see the correlation and to see if any property affects the quality of the wine.Multivarient analysis is to see if there is a relation between multiple variable or properties.
 
 3. UniVarient Analysis
 
@@ -97,8 +97,6 @@ sulphates<-ggplot(aes(sulphates),data=Red_wine)+
    ylab('Count')
   sulphates
 grid.arrange(quality,Fixed_Acidity,Volatile_Acidity,Citric_Acidity,Residual_Sugar,Chlorides,Density,pH,alcohol,sulphates)
-```
-#box plots 
 par(mfrow=c(1,5), oma = c(1,1,0,0) + 0.1,  mar = c(3,3,1,1) + 0.1)
 boxplot(Red_wine$fixed.acidity, col="slategray2", pch=19)
 mtext("Fixed Acidity", cex=0.8, side=1, line=2)
@@ -120,6 +118,7 @@ boxplot(Red_wine$alcohol,col="slategray2", pch=19)
 mtext("Alcohol", cex=0.8, side=1, line=2)
 boxplot(Red_wine$quality,col="slategray2", pch=19)
 mtext("Quality", cex=0.8, side=1, line=2)
+```
 
 #From the univarient plots it can be observed that quality of the wine ranges between 5 and 6.The properties like Fixed acidity and volatile acidity and citric acid have outliers.Residual sugar has a positively skewed distribution; even after eliminating the outliers distribution will remain skewed.Some of the variables, e.g . free sulphur dioxide, density, have a few outliers but these are very different from the rest.Mostly outliers are on the larger side.Alcohol has an irregular shaped distribution but it does not have pronounced outliers
 
