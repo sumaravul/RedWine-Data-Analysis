@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-load the libraries required for the analysis
+1. load the libraries required for the analysis
 ```{r}
 library(ggplot2)
 library(GGally)
@@ -20,7 +20,7 @@ library(RColorBrewer)
 library(markdown)
 ```
 
-Reading the red wine data 
+2. Reading the red wine data 
 ```{r}
 Red_wine<-read.csv('wineQualityReds.csv')
 head(Red_wine)
