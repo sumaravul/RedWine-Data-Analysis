@@ -44,8 +44,8 @@ Red_wine
 ```
 
 ## Analysis strategy
-#conduct univarient and bivarient analysis.
-#univarient Analysis will show how each propertiy is distributed and to see if there are any outliers #Bivarient analysis will be done to see the correlation and to see if any property affects the quality of the wine.
+conduct univarient and bivarient analysis.
+univarient Analysis will show how each propertiy is distributed and to see if there are any outliers Bivarient analysis will be done to see the correlation and to see if any property affects the quality of the wine.
 
 ## UniVarient Analysis
 #look at individual variable to study the data quality and outliers
