@@ -40,9 +40,8 @@ sulphates
 Alcohol
 quality
 
-#There is a column X which is not useful in the analysis hence deleting the column
-
-```
+There is a column X which is not useful in the analysis hence deleting the column
+```{r}
 Red_wine$X<-NULL
 Red_wine
 ```
