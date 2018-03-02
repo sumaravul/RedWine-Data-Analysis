@@ -156,32 +156,32 @@ freesdo2<-ggplot(aes(x = free.sulfur.dioxide, y = quality),
   geom_smooth()
 grid.arrange(alcohol_quality,sulphates_quality,FA_quality,freesdo2)
 ```
-
-# the analysis shows a weak correlations hence multivarient analysis will be helpful to further interpret the data
-
-## Multivarient Analysis
-#volatile acidity vs Alcohol
+5. Multivarient Analysis
+volatile acidity vs Alcohol
+```{r}
 ggplot(aes(x = quality, y = volatile.acidity), data = Red_wine) +
   geom_jitter(aes(color = alcohol), alpha = 0.8) +
   geom_smooth(method = "lm", color = "green")
+```
+As you can see in the above plot, the alcohol content increases as the quality increases. This plot summarizes both the medium strong positive relationship of alcohol and quality, and the medium strong negative relationship of volatile acidity and quality.
 
-#As you can see in the above plot, the alcohol content increases as the quality increases. This plot summarizes both the medium strong positive relationship of alcohol and quality, and the medium strong negative relationship of volatile acidity and quality.
-
-##Free sdo2 vs sulphates colored by quality
-# changing quality data type from integer to factor
+Free sdo2 vs sulphates colored by quality
+hanging quality data type from integer to factor
+```{r}
 Red_wine$quality <- factor(Red_wine$quality)
 ggplot(aes(x = sulphates, y = free.sulfur.dioxide), data = Red_wine) +
   geom_jitter(aes(color = quality), alpha = 0.8) +
   geom_smooth(method = "lm", color = "red")
-  
-#The graph shows a very weak positive correlation between sdo2 and sulphates.Earlier correlation analysis shows a positive correlation between sulphates and quality of the wine which can also be represented in this graph.
+```
+The graph shows a very weak positive correlation between sdo2 and sulphates.Earlier correlation analysis shows a positive correlation between sulphates and quality of the wine which can also be represented in this graph.
 
-##pH vs fixed acidity colored by quality
+pH vs fixed acidity colored by quality
+```{r}
 ggplot(aes(x = fixed.acidity, y = pH), data = Red_wine) +
   geom_jitter(aes(color = quality), alpha = 0.65) +
   geom_smooth(method = "lm", color = "blue")
-  
-# pH is always used as an indicator for acidity which is done usingthe litmus test. Low pH is is an indicator of high acidity and high pH is an indicator of basic solution.This graph shows a negetive correlation between pH and acidity which was also indicated in correlation analysis.
+```
+pH is always used as an indicator for acidity which is done usingthe litmus test. Low pH is is an indicator of high acidity and high pH is an indicator of basic solution.This graph shows a negetive correlation between pH and acidity which was also indicated in correlation analysis.
 
 ## Final Plots and Summary
 ## Plot One
