@@ -127,10 +127,11 @@ Generating correlation coefficients between the variables.
 ```{r}
 relations<-cor(Red_wine)
 ```
-#computing the correlation of 12 input variables
+computing the correlation of 12 input variables
+```{r}
 pairs(Red_wine[,-13], gap=0, pch=19, cex=0.4, col="red")
 title(sub="Scatterplot of Chemical Attributes", cex=0.8)
-
+```
 ## looking at the correlations it can be seen that alcohol,sulphates and citric acid have correlation coefficient greater than or equal to 0.2(positive) and free sdo2 and ph have a correlation coefficient of -0.05(negetive). Looking at the individual correlation plots
 
 alcohol_quality <- ggplot(aes(x = alcohol, y = quality),
