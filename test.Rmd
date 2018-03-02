@@ -47,21 +47,20 @@ Red_wine
 ```
 
 ## Analysis strategy
-conduct univarient and bivarient analysis.
+Conduct univarient and bivarient analysis.
 univarient Analysis will show how each propertiy is distributed and to see if there are any outliers Bivarient analysis will be done to see the correlation and to see if any property affects the quality of the wine.
 
-## UniVarient Analysis
-#look at individual variable to study the data quality and outliers
+3.UniVarient Analysis
+look at individual variable to study the data quality and outliers
+```{r}
 quality<-ggplot(aes(quality), data = Red_wine) +
   geom_histogram(fill = I('blue'), binwidth = 1, alpha = 0.75) +
   xlab('Quality') +
   ylab('Count')
-
 Fixed_Acidity<-ggplot(aes(fixed.acidity), data = Red_wine) +
   geom_histogram(fill = I('blue'), binwidth = 1, alpha = 0.5) +
   xlab('Fixed Acidity') +
   ylab('Count')
-
 Volatile_Acidity<-ggplot(aes(volatile.acidity), data = Red_wine) +
   geom_histogram(fill = I('blue'), binwidth = 0.1) +
   xlab('Volatile Acidity') +
@@ -96,6 +95,7 @@ sulphates<-ggplot(aes(sulphates),data=Red_wine)+
    ylab('Count')
   sulphates
 grid.arrange(quality,Fixed_Acidity,Volatile_Acidity,Citric_Acidity,Residual_Sugar,Chlorides,Density,pH,alcohol,sulphates)
+```
 #box plots 
 par(mfrow=c(1,5), oma = c(1,1,0,0) + 0.1,  mar = c(3,3,1,1) + 0.1)
 boxplot(Red_wine$fixed.acidity, col="slategray2", pch=19)
