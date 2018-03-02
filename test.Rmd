@@ -122,10 +122,11 @@ mtext("Quality", cex=0.8, side=1, line=2)
 From the univarient plots it can be observed that quality of the wine ranges between 5 and 6.The properties like Fixed acidity and volatile acidity and citric acid have outliers.Residual sugar has a positively skewed distribution; even after eliminating the outliers distribution will remain skewed.Some of the variables, e.g . free sulphur dioxide, density, have a few outliers but these are very different from the rest.Mostly outliers are on the larger side.Alcohol has an irregular shaped distribution but it does not have pronounced outliers
 
 
-##Bivarient Analysis:Summary statitics and correlation coefficients
-
-#check the correlations between each variable
+4. Bivarient Analysis
+Generating correlation coefficients between the variables.
+```{r}
 relations<-cor(Red_wine)
+```
 #computing the correlation of 12 input variables
 pairs(Red_wine[,-13], gap=0, pch=19, cex=0.4, col="red")
 title(sub="Scatterplot of Chemical Attributes", cex=0.8)
