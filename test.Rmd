@@ -132,8 +132,11 @@ computing the correlation of 12 input variables
 pairs(Red_wine[,-13], gap=0, pch=19, cex=0.4, col="red")
 title(sub="Scatterplot of Chemical Attributes", cex=0.8)
 ```
-## looking at the correlations it can be seen that alcohol,sulphates and citric acid have correlation coefficient greater than or equal to 0.2(positive) and free sdo2 and ph have a correlation coefficient of -0.05(negetive). Looking at the individual correlation plots
+observation of correlation : 
+looking at the correlations it can be seen that alcohol,sulphates and citric acid have correlation coefficient greater than or equal to 0.2(positive) and free sdo2 and ph have a correlation coefficient of -0.05(negetive).
 
+Looking at the individual correlation plots
+```{r}
 alcohol_quality <- ggplot(aes(x = alcohol, y = quality),
              data = Red_wine) +
   geom_point(position = 'jitter', alpha = .25) +
@@ -152,6 +155,7 @@ freesdo2<-ggplot(aes(x = free.sulfur.dioxide, y = quality),
   geom_point(position = 'jitter', alpha = .25)+
   geom_smooth()
 grid.arrange(alcohol_quality,sulphates_quality,FA_quality,freesdo2)
+```
 
 # the analysis shows a weak correlations hence multivarient analysis will be helpful to further interpret the data
 
